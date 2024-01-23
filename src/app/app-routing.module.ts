@@ -70,6 +70,22 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: () => import('./pages/list/list.module').then( m => m.ListPageModule)
+  },
+  {
+    path: 'progressbar',
+    loadChildren: () => import('./pages/progressbar/progressbar.module').then( m => m.ProgressbarPageModule)
+  },
+  {
+    path: 'refresher',
+    loadChildren: () => import('./pages/refresher/refresher.module').then( m => m.RefresherPageModule)
+  },
+  {
+    path: 'reorder',
+    loadChildren: () => import('./pages/reorder/reorder.module').then( m => m.ReorderPageModule)
+  },
+  {
+    path: 'select',
+    loadChildren: () => import('./pages/select/select.module').then( m => m.SelectPageModule)
   }
 ];
 
