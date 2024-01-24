@@ -86,6 +86,14 @@ const routes: Routes = [
   {
     path: 'select',
     loadChildren: () => import('./pages/select/select.module').then( m => m.SelectPageModule)
+  },
+  {
+    path: 'toggle',
+    loadChildren: () => import('./pages/toggle/toggle.module').then( m => m.TogglePageModule)
+  },
+  {
+    path: 'searchbar',
+    loadChildren: () => import('./pages/searchbar/searchbar.module').then( m => m.SearchbarPageModule)
   }
 ];
 

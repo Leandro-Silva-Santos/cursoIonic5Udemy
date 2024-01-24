@@ -24,6 +24,8 @@ export class AppComponent {
     { title: 'Refresher', url: 'refresher', icon: 'construct' },
     { title: 'Reorder', url: 'reorder', icon: 'construct' },
     { title: 'Select', url: 'select', icon: 'construct' },
+    { title: 'Toggle', url: 'toggle', icon: 'construct' },
+    { title: 'SearchBar', url: 'searchbar', icon: 'construct' },
     
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
