@@ -29,6 +29,7 @@ export class AppComponent {
     { title: 'Segment', url: 'segment', icon: 'construct' },
     { title: 'Slides', url: 'slides', icon: 'construct' },
     { title: 'Toast', url: 'toast', icon: 'construct' },
+    { title: 'Modal', url: 'modal', icon: 'construct' },
     
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
