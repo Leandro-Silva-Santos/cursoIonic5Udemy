@@ -4,18 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { RadioPageRoutingModule } from './radio-routing.module';
 
-import { HomePage } from './home.page';
+import { RadioPage } from './radio.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    RadioPageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [RadioPage]
 })
-export class HomePageModule {}
-export class SharedModule{}
+export class RadioPageModule {}

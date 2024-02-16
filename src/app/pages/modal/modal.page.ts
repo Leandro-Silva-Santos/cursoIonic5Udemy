@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { ModalInternoComponent } from 'src/app/components/modal-interno/modal-interno.component';
 
 @Component({
   selector: 'app-modal',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalPage implements OnInit {
 
-  constructor() { }
+  constructor(private modalCtrl : ModalController) { }
 
   ngOnInit() {
   }
 
+
+  async openModal(){
+    let modal = await this.modalCtrl.create({
+      component : ModalInternoComponent,
+      componentProps: {nome: 'Leandro'}
+    });
+
+    return await modal.present();
+  }
 }
